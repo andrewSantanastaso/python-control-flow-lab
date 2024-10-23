@@ -17,7 +17,7 @@ def print_greeting():
         print("Python is fun!")
 
 # Call the function
-print_greeting()
+# print_greeting()
 # Exercise 1: Vowel or Consonant
 #
 # Write a Python function named `check_letter` that determines if a given letter
@@ -55,7 +55,7 @@ def check_letter():
              
 
 # Call the function
-check_letter()
+# check_letter()
 
 # Exercise 2: Old enough to vote?
 #
@@ -89,4 +89,34 @@ def check_voting_eligibility():
     
 
 # Call the function
-check_voting_eligibility()
+# check_voting_eligibility()
+
+# Exercise 3: Calculate Dog Years
+#
+# Write a Python function named `calculate_dog_years` that calculates a dog's age in dog years.
+# Fill in the logic to perform the calculation inside the function.
+#
+# Function Details:
+# - Prompt the user to enter a dog's age: "Input a dog's age: "
+# - Calculate the dog's age in dog years:
+#      - The first two years of the dog's life count as 10 dog years each.
+#      - Each subsequent year counts as 7 dog years.
+# - Print the calculated age: "The dog's age in dog years is xx."
+# - Replace 'xx' with the calculated dog years.
+#
+# Hints:
+# - Use the `input()` function to capture user input.
+# - Convert the string input to an integer using `int()`.
+# - Apply conditional logic to perform the correct age calculation based on the dog's age.
+
+def calculate_dog_years():
+    age = int(input("Input a dog's age: "))
+    output_age = 0
+    if age <= 2:
+         output_age = age * 10
+    else:
+         output_age = 20+((age-2)*7)
+        
+    print(f"The dog's age in dog years is {output_age}.")
+# Call the function
+calculate_dog_years()
